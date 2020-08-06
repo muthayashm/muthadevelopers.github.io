@@ -4,8 +4,10 @@
 <body>
 
   <script>
-    var queryString = window.location.search;
-    alert(""+queryString);
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const rid = urlParams.get('rid');
+    console.log(rid);
   </script>
 
 </body>
