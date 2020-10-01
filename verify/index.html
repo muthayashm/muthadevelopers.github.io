@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    var showDetail = false;
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const rid = urlParams.get('rid');
+    var data = $.csv.toArrays(records.csv);
+    console.log(rid+":"+data[1]);
+  </script>
+  
+  <script src="jquery.csv.js"></script>
+
+</body>
+
+</html>
